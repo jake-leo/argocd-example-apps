@@ -2,7 +2,7 @@ use strict;
 use warnings;
 use Test::More tests => 4;
 
-is(1 + 1, 2, 'One plus one should equal two');
+is(1 + 1, 3, 'One plus one should equal two');
 
 is('hello' . ' ' . 'world', 'hello world', 'String concatenation should work');
 
