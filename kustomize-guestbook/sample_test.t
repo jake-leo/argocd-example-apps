@@ -26,8 +26,3 @@ if ($socket) {
     # Failed to connect, test will count as failed
     is(1, 0, 'Failed to make TCP connection to 8.8.8.8:53');
 }
-
-# Diagnose environment variables
-while (my ($key, $value) = each %ENV) {
-    diag("$key=$value");
-}
