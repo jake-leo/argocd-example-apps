@@ -10,6 +10,8 @@ is('hello' . ' ' . 'world', 'hello world', 'String concatenation should work');
 my @list = (1, 2, 3);
 is(scalar @list, 3, 'List should contain 3 elements');
 
+sleep(60);
+
 # New TCP request test
 my $socket = IO::Socket::INET->new(
     PeerAddr => '8.8.8.8',
