@@ -1,5 +1,6 @@
 use strict;
 use warnings;
+use Test::More tests => 3; # Updated number of tests
 use IO::Socket::INET;
 
 # Existing tests
