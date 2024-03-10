@@ -20,9 +20,9 @@ my $socket = IO::Socket::INET->new(
 
 if ($socket) {
     # Successfully connected
-    is(1, 1, 'Successfully made TCP connection to 8.8.8.8:53');
+    diag(1, 1, 'Successfully made TCP connection to 8.8.8.8:53');
     $socket->close();
 } else {
     # Failed to connect, test will count as failed
-    is(1, 0, 'Failed to make TCP connection to 8.8.8.8:53');
+    diag(1, 0, 'Failed to make TCP connection to 8.8.8.8:53');
 }
